@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoAnimalesExtincion">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="OSO POLAR"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/parrafo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Los osos polares se encuentran en la parte superior de la cadena alimenticia y desempeñan un importante papel en la salud general del medio ambiente marino. Durante miles de años, los osos polares también han sido importantes para las culturas y las economías de las comunidades de la región."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="fill_horizontal|fill_vertical"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/oso_polar"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/parrafo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="\nLos osos polares dependen del hielo marino para su sobrevivencia y se ven directamente afectados por el cambio climático. Por eso estos animales son un indicador clave del estado de salud del Ártico."
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

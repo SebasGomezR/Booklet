@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_gotas"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:text="Menú Principal \n"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text=" ¿Sobre que tema deseas aprender? \n  Elije una opción!"/>
+
+    <Button
+        android:id="@+id/animal_extincion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Animales en extinción"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="300dp"/>
+
+    <Button
+        android:id="@+id/planta_extincion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Plantas en extinción"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/tala_arboles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Deforestación"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/contaminacion_agua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Contaminación del agua"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

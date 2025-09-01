@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97478629717",
+    "project_id": "booklet-android",
+    "storage_bucket": "booklet-android.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97478629717:android:d666d843887dc5f4cbb7dc",
+        "android_client_info": {
+          "package_name": "com.example.app_booklet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXGRXrBAVwC9zIuj1a4yGNYia5gLOKkmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
