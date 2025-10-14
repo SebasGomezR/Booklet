@@ -17,7 +17,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Registro extends AppCompatActivity {
+public class RegistroActivity extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword;
 
@@ -40,7 +40,7 @@ public class Registro extends AppCompatActivity {
         Registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Registro.this, InfoAnimalesExtincion.class);
+                Intent intent = new Intent(RegistroActivity.this, ModelsActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -54,11 +54,11 @@ public class Registro extends AppCompatActivity {
                 password = String.valueOf(editTextPassword.getText());
 
                 if(TextUtils.isEmpty(email)){
-                    Toast.makeText(Registro.this, "Ingrese el correo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistroActivity.this, "Ingrese el correo", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(Registro.this, "Ingrese la contraseña", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistroActivity.this, "Ingrese la contraseña", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -67,13 +67,13 @@ public class Registro extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(Registro.this, "Registro Exitoso!", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(Registro.this, AuthActivity.class);
+                                    Toast.makeText(RegistroActivity.this, "Registro Exitoso!", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(RegistroActivity.this, AuthActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
                                 else{
-                                    Toast.makeText(Registro.this,"Registro Fallido!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegistroActivity.this,"Registro Fallido!", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

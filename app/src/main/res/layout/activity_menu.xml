@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_gotas"
     android:orientation="vertical"
-    tools:context=".MenuPrincipal">
+    tools:context=".MenuActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:text=" ¿Sobre que tema deseas aprender? \n  Elije una opción!"/>
 
     <Button
-        android:id="@+id/animal_extincion"
+        android:id="@+id/btnAnimales"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -35,17 +35,17 @@
         android:layout_marginTop="300dp"/>
 
     <Button
-        android:id="@+id/planta_extincion"
+        android:id="@+id/btnPlantas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:text="Plantas en extinción"
+        android:text="Plantas y arboles en extinción"
         android:background="@drawable/round_btn"
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/tala_arboles"
+        android:id="@+id/btnDeforestacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -55,7 +55,7 @@
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/contaminacion_agua"
+        android:id="@+id/btnContaminacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"

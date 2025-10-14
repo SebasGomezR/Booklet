@@ -43,7 +43,7 @@ public class AuthActivity extends AppCompatActivity {
         Registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AuthActivity.this, Registro.class);
+                Intent intent = new Intent(AuthActivity.this, RegistroActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -71,7 +71,7 @@ public class AuthActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
                                     Toast.makeText(AuthActivity.this, "Inicio Exitoso", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(AuthActivity.this, MenuPrincipal.class);
+                                    Intent intent = new Intent(AuthActivity.this, MenuActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }

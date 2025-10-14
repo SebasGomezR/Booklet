@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">App_Booklet</string>
+
+    <string name="title_inicio">¿Qué deseas hacer?</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_register">Registrarse</string>
 </resources>

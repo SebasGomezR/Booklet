@@ -13,16 +13,22 @@
         android:theme="@style/Theme.App_Booklet"
         tools:targetApi="31">
         <activity
-            android:name=".InfoAnimalesExtincion"
-            android:exported="false" />
-        <activity
-            android:name=".MenuPrincipal"
-            android:exported="false" />
-        <activity
-            android:name=".Registro"
+            android:name=".InicioActivity"
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
