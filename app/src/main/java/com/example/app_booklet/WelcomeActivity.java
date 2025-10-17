@@ -1,9 +1,12 @@
 package com.example.app_booklet;
 
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +15,8 @@ public class WelcomeActivity extends AppCompatActivity{
 
     private TextView[] mensajes;
     private Button btnIniciar;
+    private ImageView biopochito1, biopochito2;
+
     private int indice = 0; // mensaje actual
 
 
@@ -26,10 +31,18 @@ public class WelcomeActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
+        biopochito1 = findViewById(R.id.biopochitoImage);
+        biopochito2 = findViewById(R.id.biopochitoImage2);
+
+        // Se oculta la segunda imagen al inicio
+        biopochito2.setVisibility(View.GONE);
+        biopochito2.setAlpha(0f);
+
         mensajes = new TextView[]{
                 findViewById(R.id.msg1),
                 findViewById(R.id.msg2),
-                findViewById(R.id.msg3)
+                findViewById(R.id.msg3),
+                findViewById(R.id.msg4)
         };
 
         // Después de inicializar el array mensajes:
@@ -63,29 +76,61 @@ public class WelcomeActivity extends AppCompatActivity{
 
     private void mostrarSiguiente() {
         if (indice < mensajes.length - 1) {
-            // Animación: ocultar actual
+            // Animación: ocultar el mensaje actual
             mensajes[indice].animate()
                     .alpha(0f)
                     .setDuration(500)
                     .withEndAction(() -> {
                         mensajes[indice].setVisibility(View.GONE);
 
-                        // mostrar siguiente
+                        // Mostrar el siguiente mensaje
                         indice++;
                         mensajes[indice].setAlpha(0f);
                         mensajes[indice].setVisibility(View.VISIBLE);
-                        mensajes[indice].animate().alpha(1f).setDuration(500).start();
+
+                        // Animación de aparición
+                        mensajes[indice].animate()
+                                .alpha(1f)
+                                .setDuration(700)
+                                .withEndAction(() -> {
+                                    // Efecto de flotación continua
+                                    ObjectAnimator floatAnim = ObjectAnimator.ofFloat(
+                                            mensajes[indice],
+                                            "translationY",
+                                            -10f, 10f
+                                    );
+                                    floatAnim.setDuration(2000);
+                                    floatAnim.setRepeatCount(ValueAnimator.INFINITE);
+                                    floatAnim.setRepeatMode(ValueAnimator.REVERSE);
+                                    floatAnim.start();
+                                })
+                                .start();
                     }).start();
         } else {
-            // ya no hay más mensajes → mostrar botón iniciar
+            // Ya no hay más mensajes → mostrar botón iniciar
             mensajes[indice].animate()
                     .alpha(0f)
                     .setDuration(500)
                     .withEndAction(() -> {
                         mensajes[indice].setVisibility(View.GONE);
+
+                        // 🔹 Cambiar imagen de Biopochito
+                        biopochito1.animate()
+                                .alpha(0f)
+                                .setDuration(600)
+                                .withEndAction(() -> {
+                                    biopochito1.setVisibility(View.GONE);
+                                    biopochito2.setVisibility(View.VISIBLE);
+                                    biopochito2.animate().alpha(1f).setDuration(600).start();
+                                }).start();
+
+                        // 🔹 Mostrar el botón Iniciar
                         btnIniciar.setVisibility(View.VISIBLE);
                         btnIniciar.setAlpha(0f);
-                        btnIniciar.animate().alpha(1f).setDuration(700).start();
+                        btnIniciar.animate()
+                                .alpha(1f)
+                                .setDuration(700)
+                                .start();
                     }).start();
         }
     }

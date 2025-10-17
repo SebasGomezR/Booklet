@@ -9,7 +9,10 @@
     android:layout_marginStart="16dp"
     android:layout_marginTop="16dp"
     android:layout_marginEnd="16dp"
-    tools:context=".InicioActivity">
+    android:gravity="center_horizontal"
+    android:textAlignment="center"
+    tools:context=".InicioActivity"
+    android:background="@drawable/fondo_hoja">
 
     <TextView
         android:id="@+id/titulo"
@@ -19,18 +22,18 @@
         android:text="@string/title_inicio"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_margin="16dp"/>
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Iniciar Sesión"/>
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Registrarse"/>
 

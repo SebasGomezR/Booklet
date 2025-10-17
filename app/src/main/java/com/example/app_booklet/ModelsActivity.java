@@ -43,29 +43,92 @@ public class ModelsActivity extends AppCompatActivity {
         List<InfoTemas> animales = Arrays.asList(
                 new InfoTemas(
                         "animal",
-                        "Jaguar",
-                        "Panthera onca",
-                        "Selvas tropicales de América del Sur y Central",
-                        "Aproximadamente 15 000 ejemplares",
-                        "Cazador solitario y excelente nadador. Su supervivencia se ve afectada por la pérdida de hábitat y la caza ilegal.",
+                        "Rinoceronte de Java",
+                        "Rhinoceros sondaicus",
+                        "Bosques tropicales y zonas pantanosas del Parque Nacional Ujung Kulon (Indonesia)",
+                        "Aproximadamente 60 a 75 ejemplares",
+                        "Solitario, tranquilo y territorial; suele bañarse en el lodo para refrescarse y proteger su piel.",
                         null, null, null, null
                 ),
                 new InfoTemas(
                         "animal",
-                        "Oso de anteojos",
-                        "Tremarctos ornatus",
-                        "Bosques nublados y zonas montañosas de los Andes",
-                        "Entre 10 000 y 20 000 ejemplares",
-                        "Es el único oso de Sudamérica. Juega un papel clave en la dispersión de semillas. Amenazado por la deforestación.",
+                        "Gorila de montaña",
+                        "Gorilla beringei beringei",
+                        "Bosques montañosos de Ruanda, Uganda y República Democrática del Congo",
+                        "Cerca de 1 000 ejemplares",
+                        "Vive en grupos familiares liderados por un macho dominante (‘espalda plateada’); pacífico y social.",
                         null, null, null, null
                 ),
                 new InfoTemas(
                         "animal",
-                        "Delfín rosado del Amazonas",
-                        "Inia geoffrensis",
-                        "Ríos y afluentes del Amazonas y Orinoco",
-                        "Menos de 50 000 ejemplares",
-                        "Inteligente y sociable. Afectado por la contaminación y las redes de pesca.",
+                        "Tigre",
+                        "Panthera tigris",
+                        "Bosques tropicales, manglares, sabanas y selvas del sur y sudeste de Asia",
+                        "Aproximadamente 3 900 ejemplares en libertad",
+                        "Solitario, cazador nocturno, muy territorial y excelente nadador.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Panda gigante",
+                        "Ailuropoda melanoleuca",
+                        "Bosques templados de bambú en las montañas del centro de China",
+                        "Alrededor de 1 800 ejemplares en libertad",
+                        "Solitario, tranquilo, pasa la mayor parte del día comiendo bambú y descansando.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Oso polar",
+                        "Ursus maritimus",
+                        "Regiones árticas cubiertas de hielo y nieve",
+                        "Entre 22 000 y 31 000 ejemplares",
+                        "Solitario y nómada, excelente nadador, pasa mucho tiempo cazando focas sobre el hielo marino.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Morsa del Pacífico",
+                        "Odobenus rosmarus divergens",
+                        "Costas heladas y plataformas de hielo del mar de Bering y el Ártico",
+                        "Entre 200 000 y 250 000 ejemplares",
+                        "Social, forma grandes grupos en las costas; usa sus colmillos para desplazarse y defenderse.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Pingüino de Magallanes",
+                        "Spheniscus magellanicus",
+                        "Costas de Argentina, Chile y las islas Malvinas",
+                        "Cerca de 1.3 millones de parejas reproductoras",
+                        "Muy sociable, forma grandes colonias, nada y bucea con gran destreza, fiel a su pareja.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Tortuga laúd",
+                        "Dermochelys coriacea",
+                        "Océanos tropicales y templados; playas arenosas para anidar",
+                        "Unos 25 000 a 30 000 hembras anidantes",
+                        "Solitaria, migratoria, puede recorrer miles de kilómetros; anida en el mismo sitio donde nació.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Mariposa monarca",
+                        "Danaus plexippus",
+                        "Praderas, bosques templados y zonas rurales de Norteamérica y México",
+                        "Millones de ejemplares, aunque en declive",
+                        "Migratoria, recorre hasta 4 000 km; forma grandes colonias durante la hibernación en México.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "animal",
+                        "Abeja",
+                        "Apis mellifera",
+                        "Praderas, bosques, campos agrícolas y áreas urbanas",
+                        "Miles de millones en todo el mundo, aunque en disminución",
+                        "Social, vive en colmenas organizadas; esenciales para la polinización y la producción de miel.",
                         null, null, null, null
                 )
         );
@@ -73,29 +136,92 @@ public class ModelsActivity extends AppCompatActivity {
         List<InfoTemas> plantas = Arrays.asList(
                 new InfoTemas(
                         "planta",
+                        "Frailejones (Espeletia spp.)",
+                        "Espeletia spp.",
+                        "Páramos de los Andes, especialmente en Colombia, Venezuela y Ecuador",
+                        "Varias especies; algunas con poblaciones reducidas y en peligro",
+                        "Plantas clave en los ecosistemas de páramo; captan agua de la niebla y la liberan al suelo, ayudando a regular el ciclo hídrico.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Tejo europeo",
+                        "Taxus baccata",
+                        "Bosques templados de Europa, el norte de África y el oeste de Asia",
+                        "Poblaciones fragmentadas y en disminución",
+                        "Árbol de crecimiento lento y longevidad extrema; produce taxina, una sustancia tóxica. Amenazado por tala y recolección excesiva.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Árbol de agar",
+                        "Aquilaria spp.",
+                        "Bosques tropicales del sudeste asiático",
+                        "Varias especies en peligro crítico debido a la sobreexplotación",
+                        "Produce una resina aromática muy valorada (oud); se tala ilegalmente para obtenerla, lo que ha reducido drásticamente sus poblaciones.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Pehuén o pino araucaria",
+                        "Araucaria araucana",
+                        "Bosques templados de Chile y Argentina",
+                        "Poblaciones naturales reducidas",
+                        "Árbol sagrado para los pueblos mapuches; produce piñones comestibles. Amenazado por incendios forestales y tala.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Nepenthes attenboroughii",
+                        "Nepenthes attenboroughii",
+                        "Montañas de Palawan (Filipinas)",
+                        "Menos de 1 000 individuos estimados",
+                        "Planta carnívora de gran tamaño que atrapa insectos; habita en suelos pobres en nutrientes. Amenazada por coleccionismo y pérdida de hábitat.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Caoba",
+                        "Swietenia macrophylla",
+                        "Bosques tropicales de América Central y del Sur",
+                        "En declive por tala indiscriminada",
+                        "Árbol de madera fina muy apreciada; cumple funciones ecológicas importantes en los bosques tropicales.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
+                        "Cícadas",
+                        "Cycadaceae",
+                        "Regiones tropicales y subtropicales de América, África y Asia",
+                        "Muchas especies con menos de 1 000 ejemplares",
+                        "Plantas antiguas, similares a palmas; de crecimiento lento y muy vulnerables a la extracción ilegal y pérdida de hábitat.",
+                        null, null, null, null
+                ),
+                new InfoTemas(
+                        "planta",
                         "Guayacán",
                         "Guaiacum officinale",
                         "Bosques secos tropicales del Caribe y norte de Sudamérica",
-                        "En peligro",
-                        "Su madera es muy dura y valiosa. Es importante para la polinización de abejas y la recuperación de suelos.",
+                        "Menos de 10 000 individuos maduros",
+                        "Árbol de madera extremadamente dura y resistente; sobreexplotado por su valor comercial. También usado en medicina tradicional.",
                         null, null, null, null
                 ),
                 new InfoTemas(
                         "planta",
                         "Magnolia espinalii",
                         "Magnolia espinalii",
-                        "Bosques húmedos del noroccidente de Colombia",
-                        "En peligro crítico",
-                        "Contribuye al equilibrio de los ecosistemas de montaña. Amenazada por la deforestación y expansión agrícola.",
+                        "Bosques húmedos del occidente de Colombia",
+                        "Población reducida y distribución limitada",
+                        "Árbol endémico colombiano con flores blancas grandes y fragantes; amenazado por deforestación y fragmentación del hábitat.",
                         null, null, null, null
                 ),
                 new InfoTemas(
                         "planta",
-                        "Flor de mayo (Cattleya trianae)",
+                        "Flor de mayo",
                         "Cattleya trianae",
-                        "Selvas húmedas andinas de Colombia",
-                        "Vulnerable",
-                        "Es la flor nacional de Colombia. Su belleza la hace objeto de extracción ilegal.",
+                        "Bosques húmedos de montaña en Colombia",
+                        "En peligro debido a la pérdida de hábitat",
+                        "Orquídea nacional de Colombia, símbolo de belleza natural; epífita, crece sobre árboles y depende de ambientes muy específicos.",
                         null, null, null, null
                 )
         );

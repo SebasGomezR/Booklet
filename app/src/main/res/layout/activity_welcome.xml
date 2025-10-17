@@ -18,49 +18,97 @@
         android:layout_height="match_parent"
         android:background="#80D5F6D5"/>
 
+
     <!-- Botones y textos -->
     <TextView
         android:id="@+id/msg1"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Hola! soy biopochito y te doy la bienvenida a App"
-        android:textAlignment="center"
+        android:background="@drawable/cloud_background"
+        android:text="¡Hola! soy Biopochito \n y te doy la bienvenida a la App"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:layout_margin="29dp"/>
+        android:layout_marginTop="150dp"
+        android:layout_gravity="top|right"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/msg2"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Aquí te queremos explicar y enseñar sobre la importancia del cuidado y preservación del medio ambiente"
+        android:background="@drawable/cloud_background"
+        android:text="Aquí te queremos enseñar sobre la importancia del cuidado y preservación del medio ambiente"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:layout_margin="29dp"/>
+        android:layout_marginTop="150dp"
+        android:layout_gravity="top|right"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/msg3"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Donde te mostraremos imagénes en realidad aumentada a través de la camara de tú celular"
+        android:background="@drawable/cloud_background"
+        android:text="Y para ello te mostraremos imagénes en realidad aumentada a través de la camara de tú celular"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:layout_margin="29dp"/>
+        android:layout_marginTop="150dp"
+        android:layout_gravity="top|right"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/msg4"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/cloud_background"
+        android:text="Asi que da clic en el botón para que inicies con este aprendizaje"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="top|right"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/biopochitoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/biopochito"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="-40dp"/>
+
+    <ImageView
+        android:id="@+id/biopochitoImage2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/biopochito2"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="-40dp"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/btnIniciar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:text="Iniciar"
         android:background="@drawable/round_btn"
         android:layout_marginHorizontal="110dp"
-        android:layout_marginTop="600dp"/>
+        android:layout_marginTop="800dp"/>
 
 </FrameLayout>
