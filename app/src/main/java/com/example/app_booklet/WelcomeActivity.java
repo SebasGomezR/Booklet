@@ -88,6 +88,18 @@ public class WelcomeActivity extends AppCompatActivity{
                         mensajes[indice].setAlpha(0f);
                         mensajes[indice].setVisibility(View.VISIBLE);
 
+                        // 🔹 Cambiar imagen de Biopochito
+                        if(indice == mensajes.length-1){
+                            biopochito1.animate()
+                                    .alpha(0f)
+                                    .setDuration(600)
+                                    .withEndAction(() -> {
+                                        biopochito1.setVisibility(View.GONE);
+                                        biopochito2.setVisibility(View.VISIBLE);
+                                        biopochito2.animate().alpha(1f).setDuration(600).start();
+                                    }).start();
+                        }
+
                         // Animación de aparición
                         mensajes[indice].animate()
                                 .alpha(1f)
@@ -113,16 +125,6 @@ public class WelcomeActivity extends AppCompatActivity{
                     .setDuration(500)
                     .withEndAction(() -> {
                         mensajes[indice].setVisibility(View.GONE);
-
-                        // 🔹 Cambiar imagen de Biopochito
-                        biopochito1.animate()
-                                .alpha(0f)
-                                .setDuration(600)
-                                .withEndAction(() -> {
-                                    biopochito1.setVisibility(View.GONE);
-                                    biopochito2.setVisibility(View.VISIBLE);
-                                    biopochito2.animate().alpha(1f).setDuration(600).start();
-                                }).start();
 
                         // 🔹 Mostrar el botón Iniciar
                         btnIniciar.setVisibility(View.VISIBLE);

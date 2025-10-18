@@ -48,7 +48,7 @@ public class ModelsActivity extends AppCompatActivity {
                         "Bosques tropicales y zonas pantanosas del Parque Nacional Ujung Kulon (Indonesia)",
                         "Aproximadamente 60 a 75 ejemplares",
                         "Solitario, tranquilo y territorial; suele bañarse en el lodo para refrescarse y proteger su piel.",
-                        null, null, null, null
+                        "file:///android_asset/rinoceronte.glb", null, null, null
                 ),
                 new InfoTemas(
                         "animal",
