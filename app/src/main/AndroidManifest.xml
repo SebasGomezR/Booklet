@@ -7,7 +7,7 @@
 
     <!-- AR y cámara requeridas -->
     <uses-feature android:name="android.hardware.camera" android:required="true" />
-    <uses-feature android:name="android.hardware.camera.ar" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +23,8 @@
         <!-- Indica que la app requiere ARCore -->
         <meta-data
             android:name="com.google.ar.core"
-            android:value="required" />
+            android:value="optional"
+            tools:replace="android:value"/>
 
         <activity
             android:name=".ArActivity"
