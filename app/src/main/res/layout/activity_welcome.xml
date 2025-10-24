@@ -50,15 +50,14 @@
     <!-- Imagen Biopochito alternativa (oculta inicialmente) -->
     <ImageView
         android:id="@+id/biopochitoImage2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="200dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/biopochito2"
-        android:visibility="gone"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintHeight_min="150dp"
@@ -70,7 +69,7 @@
     <!-- Mensaje 1 -->
     <TextView
         android:id="@+id/msg1"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="¡Hola! soy Biopochito \n y te doy la bienvenida a la App"
         android:textStyle="bold"
@@ -82,12 +81,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/biopochitoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.25"/>
+        android:layout_marginTop="90dp"/>
 
     <!-- Mensaje 2 -->
     <TextView
         android:id="@+id/msg2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aquí te queremos enseñar sobre la importancia del cuidado y preservación del medio ambiente"
         android:textStyle="bold"
@@ -101,12 +100,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/biopochitoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.25"/>
+        android:layout_marginTop="90dp"/>
 
     <!-- Mensaje 3 -->
     <TextView
         android:id="@+id/msg3"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Y para ello te mostraremos imágenes en realidad aumentada a través de la cámara de tu celular"
         android:textStyle="bold"
@@ -120,14 +119,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/biopochitoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.25"/>
+        android:layout_marginTop="90dp"/>
 
     <!-- Mensaje 4 -->
     <TextView
         android:id="@+id/msg4"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Así que da clic en el botón para que inicies con este aprendizaje"
+        android:text="Así que haz clic en el botón, para que inicies con este nuevo aprendizaje"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/black"
@@ -139,7 +138,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/biopochitoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.25"/>
+        android:layout_marginTop="90dp"/>
 
     <!-- Botón Iniciar -->
     <Button
@@ -156,6 +155,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.85"/>
+        android:layout_marginTop="335dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
