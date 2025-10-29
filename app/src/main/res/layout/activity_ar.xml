@@ -3,8 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Vista principal donde se mostrará el modelo 3D -->
     <io.github.sceneview.ar.ARSceneView
         android:id="@+id/arSceneView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:keepScreenOn="true" />
+
+    <!-- Indicador de carga -->
+    <TextView
+        android:id="@+id/txtCargando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargando modelo 3D..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#88000000"
+        android:padding="10dp"
+        android:layout_gravity="center" />
+
 </FrameLayout>

@@ -6,16 +6,38 @@ plugins {
 
 android {
     namespace 'com.example.app_booklet'
-    compileSdkVersion 36
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.example.app_booklet"
         minSdk 27
-        targetSdkVersion 36
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+    }
+
+    sourceSets {
+        main {
+            // 📂 Asegura que lea los .so y .dat de Vuforia
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            assets.srcDirs = ['src/main/assets']
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+        // Evita conflictos con el .so
+        pickFirst '**/libVuforiaEngine.so'
     }
 
     buildTypes {
@@ -24,42 +46,46 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = '17'
     }
+
+    ndkVersion '29.0.14206865'
 }
 
 dependencies {
-
+    // 🔥 Dependencias Firebase
+    implementation platform("com.google.firebase:firebase-bom:34.0.0")
     implementation 'com.google.firebase:firebase-analytics'
     implementation("com.google.firebase:firebase-auth:23.0.0")
-    implementation(platform("com.google.firebase:firebase-bom:34.0.0"))
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.activity:activity:1.11.0'
-    implementation 'androidx.room:room-compiler:2.8.2'
     implementation 'androidx.core:core-ktx:1.17.0'
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.google.ar:core:1.50.0'
+    // 💡 Librería ARSceneView
     implementation group: 'io.github.sceneview', name: 'arsceneview', version: '2.3.0'
 
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0"
+    // 🧩 Integración nativa de Vuforia
+    implementation files('libs/VuforiaEngine.jar')
 }
 
-configurations {
-    all {
-        exclude group: 'com.intellij', module: 'annotations'
-    }
+configurations.all {
+    exclude group: 'com.intellij', module: 'annotations'
 }
 
 apply plugin: 'com.google.gms.google-services'

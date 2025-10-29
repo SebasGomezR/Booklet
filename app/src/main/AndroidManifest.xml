@@ -5,9 +5,15 @@
     <!-- Permisos -->
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!-- Estos son los nuevos permisos para implementar Vuforia -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+
     <!-- AR y cámara requeridas -->
     <uses-feature android:name="android.hardware.camera" android:required="true" />
-    <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -20,11 +26,16 @@
         android:theme="@style/Theme.App_Booklet"
         tools:targetApi="31">
 
-        <!-- Indica que la app requiere ARCore -->
+        <meta-data
+            android:name="com.vuforia.engine.API_KEY"
+            android:value="ASofy4f/////AAABmeVZJeE4dUBVtDmgCrj+FOyJfcgchpkb2VEK+OuOSp21dN1bPlFLyvJCZWgomm+t2X1Xv39yKZkK3I8yfbtBKpYep0VTXzzrxeVGEkPGBW2r4eXXUI5jMSkox0i8oSR+B7a8D0P8hbmd2gKFexdBnUXezknK7gNZdyLUi7ubWYRcf/O5lMnRbV1yOVM/oEsMOnNpnuF5JZdTo7qI7+xeOv6aGvX1U7ogYhkoOeU+eYv2Hk0a38alyjIITW7Q0t5f6Pk0YnaLARHKEPO8ajeujZJ6d3Q7z+Qk8tvd6x+DCZ81TbwlIhjaIdWhJac9wIReHIXCJmbPXYe9ihR+bUussL+2Zb6lb/QqvpUVpKUVitJw" />
+
+
+        <!-- Indica que la app requiere ARCore
         <meta-data
             android:name="com.google.ar.core"
             android:value="optional"
-            tools:replace="android:value"/>
+            tools:replace="android:value"/> -->
 
         <activity
             android:name=".ArActivity"
