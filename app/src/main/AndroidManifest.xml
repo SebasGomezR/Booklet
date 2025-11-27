@@ -31,11 +31,11 @@
             android:value="ASofy4f/////AAABmeVZJeE4dUBVtDmgCrj+FOyJfcgchpkb2VEK+OuOSp21dN1bPlFLyvJCZWgomm+t2X1Xv39yKZkK3I8yfbtBKpYep0VTXzzrxeVGEkPGBW2r4eXXUI5jMSkox0i8oSR+B7a8D0P8hbmd2gKFexdBnUXezknK7gNZdyLUi7ubWYRcf/O5lMnRbV1yOVM/oEsMOnNpnuF5JZdTo7qI7+xeOv6aGvX1U7ogYhkoOeU+eYv2Hk0a38alyjIITW7Q0t5f6Pk0YnaLARHKEPO8ajeujZJ6d3Q7z+Qk8tvd6x+DCZ81TbwlIhjaIdWhJac9wIReHIXCJmbPXYe9ihR+bUussL+2Zb6lb/QqvpUVpKUVitJw" />
 
 
-        <!-- Indica que la app requiere ARCore
+        <!-- Indica que la app requiere ARCore -->
         <meta-data
             android:name="com.google.ar.core"
             android:value="optional"
-            tools:replace="android:value"/> -->
+            tools:replace="android:value"/>
 
         <activity
             android:name=".ArActivity"

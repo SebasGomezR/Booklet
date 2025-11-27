@@ -53,7 +53,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Aproximadamente 60 a 75 ejemplares",
                         "Solitario, tranquilo y territorial; suele bañarse en el lodo para refrescarse y proteger su piel.",
                         null, null, null, null,
-                        "file:///android_asset/rinoceronte.glb",
                         R.drawable.rinoceronte
                 ),
                 new InfoTemas(
@@ -64,7 +63,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Cerca de 1 000 ejemplares",
                         "Vive en grupos familiares liderados por un macho dominante (‘espalda plateada’); pacífico y social.",
                         null, null, null, null,
-                        "file:///android_asset/gorila.glb",
                         R.drawable.gorila
                 ),
                 new InfoTemas(
@@ -75,7 +73,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Aproximadamente 3 900 ejemplares en libertad",
                         "Solitario, cazador nocturno, muy territorial y excelente nadador.",
                         null, null, null, null,
-                        "file:///android_asset/tigre.glb",
                         R.drawable.tigre
                 ),
                 new InfoTemas(
@@ -86,7 +83,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Alrededor de 1 800 ejemplares en libertad",
                         "Solitario, tranquilo, pasa la mayor parte del día comiendo bambú y descansando.",
                         null, null, null, null,
-                        "file:///android_asset/panda.glb",
                         R.drawable.panda
                 ),
                 new InfoTemas(
@@ -97,7 +93,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Entre 22 000 y 31 000 ejemplares",
                         "Solitario y nómada, excelente nadador, pasa mucho tiempo cazando focas sobre el hielo marino.",
                         null, null, null, null,
-                        "file:///android_asset/oso_polar.glb",
                         R.drawable.oso_polar
                 ),
                 new InfoTemas(
@@ -108,7 +103,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Entre 200 000 y 250 000 ejemplares",
                         "Social, forma grandes grupos en las costas; usa sus colmillos para desplazarse y defenderse.",
                         null, null, null, null,
-                        "file:///android_asset/morsa.glb",
                         R.drawable.morsa
                 ),
                 new InfoTemas(
@@ -119,7 +113,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Cerca de 1.3 millones de parejas reproductoras",
                         "Muy sociable, forma grandes colonias, nada y bucea con gran destreza, fiel a su pareja.",
                         null, null, null, null,
-                        "file:///android_asset/pinguino.glb",
                         R.drawable.pinguino
                 ),
                 new InfoTemas(
@@ -130,7 +123,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Unos 25 000 a 30 000 hembras anidantes",
                         "Solitaria, migratoria, puede recorrer miles de kilómetros; anida en el mismo sitio donde nació.",
                         null, null, null, null,
-                        "file:///android_asset/tortuga.glb",
                         R.drawable.tortuga
                 ),
                 new InfoTemas(
@@ -141,7 +133,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Millones de ejemplares, aunque en declive",
                         "Migratoria, recorre hasta 4 000 km; forma grandes colonias durante la hibernación en México.",
                         null, null, null, null,
-                        "file:///android_asset/mariposa_monarca.glb",
                         R.drawable.mariposa
                 ),
                 new InfoTemas(
@@ -152,7 +143,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Miles de millones en todo el mundo, aunque en disminución",
                         "Social, vive en colmenas organizadas; esenciales para la polinización y la producción de miel.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 )
         );
@@ -166,7 +156,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Varias especies; algunas con poblaciones reducidas y en peligro",
                         "Plantas clave en los ecosistemas de páramo; captan agua de la niebla y la liberan al suelo, ayudando a regular el ciclo hídrico.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -177,7 +166,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Poblaciones fragmentadas y en disminución",
                         "Árbol de crecimiento lento y longevidad extrema; produce taxina, una sustancia tóxica. Amenazado por tala y recolección excesiva.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -188,7 +176,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Varias especies en peligro crítico debido a la sobreexplotación",
                         "Produce una resina aromática muy valorada (oud); se tala ilegalmente para obtenerla, lo que ha reducido drásticamente sus poblaciones.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -199,7 +186,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Poblaciones naturales reducidas",
                         "Árbol sagrado para los pueblos mapuches; produce piñones comestibles. Amenazado por incendios forestales y tala.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -210,7 +196,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Menos de 1 000 individuos estimados",
                         "Planta carnívora de gran tamaño que atrapa insectos; habita en suelos pobres en nutrientes. Amenazada por coleccionismo y pérdida de hábitat.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                ),
                 new InfoTemas(
                         "planta",
@@ -220,7 +205,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "En declive por tala indiscriminada",
                         "Árbol de madera fina muy apreciada; cumple funciones ecológicas importantes en los bosques tropicales.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                ),
                 new InfoTemas(
                         "planta",
@@ -230,7 +214,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Muchas especies con menos de 1 000 ejemplares",
                         "Plantas antiguas, similares a palmas; de crecimiento lento y muy vulnerables a la extracción ilegal y pérdida de hábitat.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                ),
                 new InfoTemas(
                         "planta",
@@ -240,7 +223,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Menos de 10 000 individuos maduros",
                         "Árbol de madera extremadamente dura y resistente; sobreexplotado por su valor comercial. También usado en medicina tradicional.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                ),
                 new InfoTemas(
                         "planta",
@@ -250,7 +232,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Población reducida y distribución limitada",
                         "Árbol endémico colombiano con flores blancas grandes y fragantes; amenazado por deforestación y fragmentación del hábitat.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                ),
                 new InfoTemas(
                         "planta",
@@ -260,7 +241,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "En peligro debido a la pérdida de hábitat",
                         "Orquídea nacional de Colombia, símbolo de belleza natural; epífita, crece sobre árboles y depende de ambientes muy específicos.",
                         null, null, null, null,
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja                )
         );
 
@@ -273,7 +253,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Pérdida de biodiversidad, alteración del clima y erosión del suelo.",
                         "Fortalecer la reforestación, vigilancia ambiental y educación comunitaria.",
                         "Región Amazónica de Colombia",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -284,7 +263,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Desaparición de especies únicas y contaminación de ríos.",
                         "Promover economías sostenibles y programas de conservación y vigilancia ambiental..",
                         "Costa Pacífica colombiana",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -295,7 +273,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Deslizamientos de tierra y pérdida de fuentes hídricas y desequilibrio ecológico..",
                         "Restauración ecológica y control de quemas y sensibilización a comunidades locales..",
                         "Región Caribe de Colombia",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 )
         );
@@ -309,7 +286,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Afecta la fauna acuática y el suministro de agua potable.",
                         "Implementar plantas de tratamiento y campañas de educación ambiental.",
                         "Zona Andina y Caribe colombiano",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -320,7 +296,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Alta toxicidad del agua, pérdida de especies y malos olores.",
                         "Fortalecer el control de vertimientos y promover el reciclaje de aguas grises.",
                         "Cundinamarca, Colombia",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 ),
                 new InfoTemas(
@@ -331,7 +306,6 @@ public class ModelsActivity extends AppCompatActivity {
                         "Daños graves a ecosistemas acuáticos y aves marinas.",
                         "Mejorar la infraestructura de transporte de crudo y planes de contingencia.",
                         "Zonas petroleras y marítimas de Colombia",
-                        "file:///android_asset/abeja.glb",
                         R.drawable.abeja
                 )
         );
@@ -384,14 +358,6 @@ public class ModelsActivity extends AppCompatActivity {
             textoContenido.setAlpha(0f);
             textoContenido.setText(texto);
             textoContenido.animate().alpha(1f).setDuration(500).start();
-
-            imagenTema.setOnClickListener(v -> {
-                if (item.getModeloGlb() != null && !item.getModeloGlb().isEmpty()) {
-                    Intent intent = new Intent(ModelsActivity.this, ArActivity.class);
-                    intent.putExtra("modeloGlb", item.getModeloGlb());
-                    startActivity(intent);
-                }
-            });
 
         } else {
             volverAlMenu();

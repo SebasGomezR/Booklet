@@ -12,14 +12,13 @@ public class InfoTemas {
     private String consecuencias;
     private String posiblesSoluciones;
     private String ubicacion;
-    private String modeloGlb;
     private int imagenResId;
 
 
     public InfoTemas(String tipo, String nombre, String nombreCientifico, String habitat,
                          String cantidadEjemplares, String comportamiento,
                          String causas, String consecuencias, String posiblesSoluciones,
-                         String ubicacion, String modeloGlb, int imagenResId) {
+                         String ubicacion, int imagenResId) {
         this.tipo = tipo;
         this.nombre = nombre;
         this.nombreCientifico = nombreCientifico;
@@ -30,7 +29,6 @@ public class InfoTemas {
         this.consecuencias = consecuencias;
         this.posiblesSoluciones = posiblesSoluciones;
         this.ubicacion = ubicacion;
-        this.modeloGlb = modeloGlb;
         this.imagenResId = imagenResId;
     }
 
@@ -53,8 +51,6 @@ public class InfoTemas {
     public String getPosiblesSoluciones() { return posiblesSoluciones; }
 
     public String getUbicacion() { return ubicacion; }
-
-    public String getModeloGlb() { return modeloGlb; }
 
     public int getImagenResId() { return imagenResId; }
 }
